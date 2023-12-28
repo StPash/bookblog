@@ -1,0 +1,50 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+/* Шапка сайта */
+#hat {
+width: 100%;
+height: 100px;
+color: white;
+background-color: blue;
+border-bottom: 5px solid black;
+float: left;
+}
+
+/* Боковое меню */
+#side_menu {
+width: 150px;
+height: 100vh;
+background-color: silver;
+border-right: 5px solid black;
+float: left;
+}
+
+/* Книги главной страницы */
+.homepage-books {
+width: 350px;
+height: 500px;
+margin-left: 50px;
+margin-top: 50px;
+text-align: center;
+overflow: hidden;
+border: 0.5px solid black;
+float: left;
+}
+
+
+/* Обложки книг */
+
+/* Книги списка */
+.book-in-list {
+width: 800px;
+height: 300px;
+margin-left: 150px;
+margin-top: 50px;
+
+float: left;
+border: 0.5px solid black;
+
+}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>Выберите жанры</h2>
+<div class="genrelist">
+    <form action="/genrebooks" method="post">
+        {% for genre_id in genredict %}
+        <input type="checkbox" name="{{genre_id}}" value=""> {{ genredict[genre_id] }}
+        <br>
+        {% endfor %}
+        <input type="submit" value="Показать">
+    </form>
+</div>
+{% endblock %}

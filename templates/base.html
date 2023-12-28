@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <meta charset="UTF-8">
+    <title>"И швец, и чтец"</title>
+</head>
+<body>
+<div id="hat">
+<h1>И швец, и чтец - блокнот читателя</h1>
+</div>
+
+<div id="side_menu">
+    <a href="/genres">Жанры</a>
+    <br>
+    <br>
+    <a href="/authors">Авторы</a>
+    <br>
+    <br>
+    <a>Рандом</a>
+
+</div>
+{% block body %}
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% for book in result %}
+<div class="homepage-books">
+    <img src={{book.image_url}} style="height: 300px; object-fit: contain;"> <br>
+    <h3>{{ book.title }}</h3>
+
+    <h4>{{ book.author.name }} {{ book.author.surname }}</h4>
+
+    <span>Жанр:</span>{% for row in book.genres %}
+    {{ genredict[row.genre_id]  }}
+    {% endfor %}
+    <br>
+    <br>
+    <span> {{ book.description }}</span>
+
+
+
+</div>
+{% endfor %}
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="authors">
+{% for author in db.query(Author).order_by(Author.surname).all() %}
+    <a href="/authors/{{ author.id_author }}">{{ author.surname }} {{ author.name }}
+        {% if author.patronymic != None %} {{ author.patronymic }} {% endif %}</a>
+    <br>
+    <br>
+{% endfor %}
+
+
+</div>
+
+
+{% endblock %}
+
+</body>
+</html>
