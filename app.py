@@ -61,6 +61,14 @@ def genrebooks():
         booklist = db.query(Book).filter(Book.id_book.in_(map(lambda x: x[0], id_book_list))).all()
         return render_template('genrebooks.html', booklist=booklist, genredict=genredict)
 
+# Авторизация
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/register')
+def register():
+    return render_template('register.html')
 
 
 if __name__ == '__main__':

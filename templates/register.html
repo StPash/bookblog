@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="login">
+    <h3>Регистрация</h3>
+    <br>
+    <form action="/login" method="post">
+        <p><label>Имя:</label> <input name="name"></p>
+        <br>
+        <br>
+        <p><label>Пароль:</label> <input name="psswrd"></p>
+        <br>
+        <br>
+        <p><label>Повторите пароль:</label> <input name="psswrd"></p>
+        <br>
+        <br>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</div>
+
+{% endblock %}
+
+</body>
+</html>
