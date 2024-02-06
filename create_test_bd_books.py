@@ -22,7 +22,8 @@ class User(Base):
 
     id_user = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
-    password = Column(String, nullable=False)
+    email = Column (String, nullable=False, unique=True)
+    password_hash = Column(String, nullable=False)
 
 
 class FinishedBook(Base):

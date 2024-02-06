@@ -6,7 +6,7 @@ padding: 0;
 /* Шапка сайта */
 #hat {
 width: 100%;
-height: 100px;
+height: 80px;
 color: white;
 background-color: blue;
 border-bottom: 5px solid black;
@@ -34,9 +34,6 @@ border: 0.5px solid black;
 float: left;
 }
 
-
-/* Обложки книг */
-
 /* Книги списка */
 .book-in-list {
 width: 800px;
@@ -47,4 +44,27 @@ margin-top: 50px;
 float: left;
 border: 0.5px solid black;
 
+}
+
+/* Аворизация/меню пользователя */
+.authorization-menu {
+padding-right: 5px;
+color: white;
+float: right;
+}
+
+/* Поле авторизации и регистрации */
+.login {
+width: 300px;
+margin-left: 700px;
+padding-top: 150px;
+text-align: center;
+}
+
+p label {
+float: left;
+}
+
+p input {
+float: right;
 }

@@ -4,23 +4,27 @@ from create_test_bd_books import Base, Book, Genre, BookGenre, Author
 
 engine = create_engine('sqlite:///db_books_log.db', echo=True)
 session = sessionmaker(bind=engine)
+
+# del_table = Base.metadata.tables['users']
+# del_table.drop(engine)
+
 db = session()
 
-db.add_all([
-           # BookGenre(book_id=1, genre_id=3),
-           # BookGenre(book_id=1, genre_id=4),
-           # BookGenre(book_id=1, genre_id=6),
-           #
-           # BookGenre(book_id=2, genre_id=1),
-           # BookGenre(book_id=2, genre_id=2),
-           # BookGenre(book_id=2, genre_id=5),
-           #
-           # BookGenre(book_id=3, genre_id=3),
-           #
-           # BookGenre(book_id=4, genre_id=1),
-           #
-           BookGenre(book_id=5, genre_id=3)])
-db.commit()
+# db.add_all([
+#            # BookGenre(book_id=1, genre_id=3),
+#            # BookGenre(book_id=1, genre_id=4),
+#            # BookGenre(book_id=1, genre_id=6),
+#            #
+#            # BookGenre(book_id=2, genre_id=1),
+#            # BookGenre(book_id=2, genre_id=2),
+#            # BookGenre(book_id=2, genre_id=5),
+#            #
+#            # BookGenre(book_id=3, genre_id=3),
+#            #
+#            # BookGenre(book_id=4, genre_id=1),
+#            #
+#            BookGenre(book_id=5, genre_id=3)])
+# db.commit()
 #
 # book_1 = Book(title='Печать Демона. Воительница',
 #               author_id=1,
