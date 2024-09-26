@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="login">
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">
+        {{msg}}
+    </div>
+    {% endfor %}
+    <h3>Регистрация</h3>
+    <br>
+    <form action="/register" method="post">
+        <p><label>Имя:</label> <input name="name"></p>
+        <br>
+        <br>
+        <p><label>E-mail:</label> <input name="email"></p>
+        <br>
+        <br>
+        <p><label>Пароль:</label> <input name="psswrd"></p>
+        <br>
+        <br>
+        <p><label>Повторите пароль:</label> <input name="psswrd2"></p>
+        <br>
+        <br>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</div>
+
+{% endblock %}
+
+</body>
+</html>
